@@ -1,0 +1,20 @@
+2023-10-09 09:46:42 | INFO    | __main__:from_epic:40 | run - {'stage': 'Initialization EpicPlayer'}
+2023-10-09 09:46:49 | INFO    | __main__:claim_epic_games:86 | Try to flush cookie - {'task': 'claim_epic_games'}
+2023-10-09 09:46:53 | INFO    | services.agents.epic_games:_login:94 | login - {'url': 'https://www.epicgames.com/id/login?lang=en-US&noHostRedirect=true&redirectUrl=https://store.epicgames.com/en-US/free-games'}
+2023-10-09 09:46:54 | INFO    | services.agents.epic_games:_login:96 | login-with-epic - {'url': 'https://www.epicgames.com/id/login/epic?lang=en-US&redirect_uri=https%3A%2F%2Fstore.epicgames.com%2Fen-US%2Ffree-games'}
+2023-10-09 09:46:59 | DEBUG    | services.agents.epic_games:_login:108 | claim_weekly_games - {'action': 'handle challenge'}
+2023-10-09 09:46:59 | DEBUG    | hcaptcha_challenger.agents.playwright.control:_match_solution:343 | match model - {'resnet': 'car_without_a_roof2309.onnx', 'prompt': 'Please click each image containing a car without a rοof'}
+2023-10-09 09:47:07 | DEBUG    | services.agents.epic_games:_login:111 | handle challenge - {'result': 'success'}
+2023-10-09 09:47:41 | INFO    | services.agents.epic_games:_login:94 | login - {'url': 'https://www.epicgames.com/id/login?lang=en-US&noHostRedirect=true&redirectUrl=https://store.epicgames.com/en-US/free-games'}
+2023-10-09 09:47:42 | INFO    | services.agents.epic_games:_login:96 | login-with-epic - {'url': 'https://www.epicgames.com/id/login/epic?lang=en-US&redirect_uri=https%3A%2F%2Fstore.epicgames.com%2Fen-US%2Ffree-games'}
+2023-10-09 09:47:47 | DEBUG    | services.agents.epic_games:_login:108 | claim_weekly_games - {'action': 'handle challenge'}
+2023-10-09 09:47:48 | DEBUG    | hcaptcha_challenger.agents.playwright.control:_match_solution:343 | match model - {'resnet': 'car_without_a_roof2309.onnx', 'prompt': 'Please click each image containing a car without a rοοf'}
+2023-10-09 09:47:56 | DEBUG    | services.agents.epic_games:_login:111 | handle challenge - {'result': 'success'}
+2023-10-09 09:48:29 | INFO    | services.agents.epic_games:_login:94 | login - {'url': 'https://www.epicgames.com/id/login?lang=en-US&noHostRedirect=true&redirectUrl=https://store.epicgames.com/en-US/free-games'}
+2023-10-09 09:48:31 | INFO    | services.agents.epic_games:_login:96 | login-with-epic - {'url': 'https://www.epicgames.com/id/login/epic?lang=en-US&redirect_uri=https%3A%2F%2Fstore.epicgames.com%2Fen-US%2Ffree-games'}
+2023-10-09 09:48:36 | DEBUG    | services.agents.epic_games:_login:108 | claim_weekly_games - {'action': 'handle challenge'}
+2023-10-09 09:48:36 | DEBUG    | services.agents.epic_games:_login:111 | handle challenge - {'result': 'backcall'}
+2023-10-09 09:48:39 | DEBUG    | hcaptcha_challenger.agents.playwright.control:_match_solution:343 | match model - {'resnet': 'car_without_a_roof2309.onnx', 'prompt': 'Please click each image containing a car without a rοof'}
+2023-10-09 09:48:47 | DEBUG    | services.agents.epic_games:_login:111 | handle challenge - {'result': 'success'}
+2023-10-09 09:49:17 | CRITICAL    | services.agents.epic_games:authorize:139 | Failed to flush token - {'agent': 'EpicGames'}
+2023-10-09 09:49:17 | ERROR    | __main__:claim_epic_games:91 | Exit task - {'reason': 'Failed to flush token'}

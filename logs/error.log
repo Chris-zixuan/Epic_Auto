@@ -1,0 +1,2 @@
+2023-10-09 09:49:17 | CRITICAL    | services.agents.epic_games:authorize:139 | Failed to flush token - {'agent': 'EpicGames'}
+2023-10-09 09:49:17 | ERROR    | __main__:claim_epic_games:91 | Exit task - {'reason': 'Failed to flush token'}
