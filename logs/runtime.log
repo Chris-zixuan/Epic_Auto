@@ -1,9 +1,14 @@
-2023-10-17 22:32:30 | INFO    | __main__:stash:119 | run - {'role': 'EpicPlayer', 'headless': True}
-2023-10-17 22:32:37 | INFO    | __main__:claim_epic_games:85 | Try to flush cookie - {'task': 'claim_epic_games'}
-2023-10-17 22:32:41 | INFO    | services.agents.epic_games:_login:154 | login - {'url': 'https://www.epicgames.com/id/login?lang=en-US&noHostRedirect=true&redirectUrl=https://store.epicgames.com/en-US/free-games'}
-2023-10-17 22:33:12 | ERROR    | __main__:run:138 | An error has been caught in function 'run', process 'MainProcess' (3555), thread 'MainThread' (140698000862080): - {}
+2023-10-24 22:32:13 | INFO    | __main__:stash:125 | run - {'role': 'EpicPlayer', 'headless': True}
+2023-10-24 22:32:21 | INFO    | __main__:claim_epic_games:91 | Try to flush cookie - {'task': 'claim_epic_games'}
+2023-10-24 22:32:25 | INFO    | epic_games.agent:_login:187 | login-with-email - {'url': 'https://www.epicgames.com/id/login?lang=en-US&noHostRedirect=true&redirectUrl=https://store.epicgames.com/en-US/free-games'}
+2023-10-24 22:32:30 | DEBUG    | epic_games.agent:insert_challenge:165 | Attack challenge - {'stage': 'email_exists_prod'}
+2023-10-24 22:32:31 | DEBUG    | hcaptcha_challenger.agents.playwright.control:_match_solution:377 | match model - {'resnet': 'motorized_machine2311.onnx', 'prompt': 'Please click each image containing a motorized machine'}
+2023-10-24 22:32:36 | DEBUG    | epic_games.agent:insert_challenge:168 | Parse result - {'stage': 'email_exists_prod', 'result': 'success'}
+2023-10-24 22:32:42 | DEBUG    | epic_games.agent:insert_challenge:159 | Attack challenge - {'stage': 'login_prod'}
+2023-10-24 22:32:42 | DEBUG    | epic_games.agent:insert_challenge:168 | Parse result - {'stage': 'login_prod', 'result': 'backcall'}
+2023-10-24 22:33:13 | ERROR    | __main__:run:144 | An error has been caught in function 'run', process 'MainProcess' (3599), thread 'MainThread' (139931620203584): - {}
 Traceback (most recent call last):
-  File "/home/runner/work/Epic_Auto/Epic_Auto/epic/src/claim.py", line 142, in <module>
+  File "/home/runner/work/Epic_Auto/Epic_Auto/epic/src/claim.py", line 148, in <module>
     asyncio.run(run())
   File "/opt/hostedtoolcache/Python/3.10.13/x64/lib/python3.10/asyncio/runners.py", line 44, in run
     return loop.run_until_complete(main)
@@ -15,16 +20,18 @@ Traceback (most recent call last):
     handle._run()
   File "/opt/hostedtoolcache/Python/3.10.13/x64/lib/python3.10/asyncio/events.py", line 80, in _run
     self._context.run(self._callback, *self._args)
-> File "/home/runner/work/Epic_Auto/Epic_Auto/epic/src/claim.py", line 138, in run
+> File "/home/runner/work/Epic_Auto/Epic_Auto/epic/src/claim.py", line 144, in run
     await agent.stash()
-  File "/home/runner/work/Epic_Auto/Epic_Auto/epic/src/claim.py", line 131, in stash
+  File "/home/runner/work/Epic_Auto/Epic_Auto/epic/src/claim.py", line 137, in stash
     await self.claim_epic_games(context)
-  File "/home/runner/work/Epic_Auto/Epic_Auto/epic/src/claim.py", line 86, in claim_epic_games
+  File "/home/runner/work/Epic_Auto/Epic_Auto/epic/src/claim.py", line 92, in claim_epic_games
     if await epic.authorize(page):
-  File "/home/runner/work/Epic_Auto/Epic_Auto/epic/src/services/agents/epic_games.py", line 190, in authorize
+  File "/home/runner/work/Epic_Auto/Epic_Auto/epic/src/epic_games/agent.py", line 208, in authorize
     match await self._login(page):
-  File "/home/runner/work/Epic_Auto/Epic_Auto/epic/src/services/agents/epic_games.py", line 155, in _login
-    await page.click("#login-with-epic")
+  File "/home/runner/work/Epic_Auto/Epic_Auto/epic/src/epic_games/agent.py", line 201, in _login
+    await insert_challenge(stage="login_prod")
+  File "/home/runner/work/Epic_Auto/Epic_Auto/epic/src/epic_games/agent.py", line 171, in insert_challenge
+    await page.click("//a[@class='talon_close_button']")
   File "/opt/hostedtoolcache/Python/3.10.13/x64/lib/python3.10/site-packages/playwright/async_api/_generated.py", line 10101, in click
     await self._impl_obj.click(
   File "/opt/hostedtoolcache/Python/3.10.13/x64/lib/python3.10/site-packages/playwright/_impl/_page.py", line 691, in click
@@ -33,11 +40,15 @@ Traceback (most recent call last):
     await self._channel.send("click", locals_to_params(locals()))
   File "/opt/hostedtoolcache/Python/3.10.13/x64/lib/python3.10/site-packages/playwright/_impl/_connection.py", line 61, in send
     return await self._connection.wrap_api_call(
-  File "/opt/hostedtoolcache/Python/3.10.13/x64/lib/python3.10/site-packages/playwright/_impl/_connection.py", line 482, in wrap_api_call
+  File "/opt/hostedtoolcache/Python/3.10.13/x64/lib/python3.10/site-packages/playwright/_impl/_connection.py", line 490, in wrap_api_call
     return await cb()
-  File "/opt/hostedtoolcache/Python/3.10.13/x64/lib/python3.10/site-packages/playwright/_impl/_connection.py", line 97, in inner_send
+  File "/opt/hostedtoolcache/Python/3.10.13/x64/lib/python3.10/site-packages/playwright/_impl/_connection.py", line 99, in inner_send
     result = next(iter(done)).result()
 playwright._impl._api_types.TimeoutError: Timeout 30000ms exceeded.
 =========================== logs ===========================
-waiting for locator("#login-with-epic")
+waiting for locator("xpath=//a[@class='talon_close_button']")
+  locator resolved to 2 elements. Proceeding with the first one: <a class="talon_close_button" onclick="talon.close(…>…</a>
+attempting click action
+  waiting for element to be visible, enabled and stable
+    element is not visible - waiting...
 ============================================================
