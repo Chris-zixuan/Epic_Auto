@@ -1,54 +1,20 @@
-2023-10-24 22:32:13 | INFO    | __main__:stash:125 | run - {'role': 'EpicPlayer', 'headless': True}
-2023-10-24 22:32:21 | INFO    | __main__:claim_epic_games:91 | Try to flush cookie - {'task': 'claim_epic_games'}
-2023-10-24 22:32:25 | INFO    | epic_games.agent:_login:187 | login-with-email - {'url': 'https://www.epicgames.com/id/login?lang=en-US&noHostRedirect=true&redirectUrl=https://store.epicgames.com/en-US/free-games'}
-2023-10-24 22:32:30 | DEBUG    | epic_games.agent:insert_challenge:165 | Attack challenge - {'stage': 'email_exists_prod'}
-2023-10-24 22:32:31 | DEBUG    | hcaptcha_challenger.agents.playwright.control:_match_solution:377 | match model - {'resnet': 'motorized_machine2311.onnx', 'prompt': 'Please click each image containing a motorized machine'}
-2023-10-24 22:32:36 | DEBUG    | epic_games.agent:insert_challenge:168 | Parse result - {'stage': 'email_exists_prod', 'result': 'success'}
-2023-10-24 22:32:42 | DEBUG    | epic_games.agent:insert_challenge:159 | Attack challenge - {'stage': 'login_prod'}
-2023-10-24 22:32:42 | DEBUG    | epic_games.agent:insert_challenge:168 | Parse result - {'stage': 'login_prod', 'result': 'backcall'}
-2023-10-24 22:33:13 | ERROR    | __main__:run:144 | An error has been caught in function 'run', process 'MainProcess' (3599), thread 'MainThread' (139931620203584): - {}
-Traceback (most recent call last):
-  File "/home/runner/work/Epic_Auto/Epic_Auto/epic/src/claim.py", line 148, in <module>
-    asyncio.run(run())
-  File "/opt/hostedtoolcache/Python/3.10.13/x64/lib/python3.10/asyncio/runners.py", line 44, in run
-    return loop.run_until_complete(main)
-  File "/opt/hostedtoolcache/Python/3.10.13/x64/lib/python3.10/asyncio/base_events.py", line 636, in run_until_complete
-    self.run_forever()
-  File "/opt/hostedtoolcache/Python/3.10.13/x64/lib/python3.10/asyncio/base_events.py", line 603, in run_forever
-    self._run_once()
-  File "/opt/hostedtoolcache/Python/3.10.13/x64/lib/python3.10/asyncio/base_events.py", line 1909, in _run_once
-    handle._run()
-  File "/opt/hostedtoolcache/Python/3.10.13/x64/lib/python3.10/asyncio/events.py", line 80, in _run
-    self._context.run(self._callback, *self._args)
-> File "/home/runner/work/Epic_Auto/Epic_Auto/epic/src/claim.py", line 144, in run
-    await agent.stash()
-  File "/home/runner/work/Epic_Auto/Epic_Auto/epic/src/claim.py", line 137, in stash
-    await self.claim_epic_games(context)
-  File "/home/runner/work/Epic_Auto/Epic_Auto/epic/src/claim.py", line 92, in claim_epic_games
-    if await epic.authorize(page):
-  File "/home/runner/work/Epic_Auto/Epic_Auto/epic/src/epic_games/agent.py", line 208, in authorize
-    match await self._login(page):
-  File "/home/runner/work/Epic_Auto/Epic_Auto/epic/src/epic_games/agent.py", line 201, in _login
-    await insert_challenge(stage="login_prod")
-  File "/home/runner/work/Epic_Auto/Epic_Auto/epic/src/epic_games/agent.py", line 171, in insert_challenge
-    await page.click("//a[@class='talon_close_button']")
-  File "/opt/hostedtoolcache/Python/3.10.13/x64/lib/python3.10/site-packages/playwright/async_api/_generated.py", line 10101, in click
-    await self._impl_obj.click(
-  File "/opt/hostedtoolcache/Python/3.10.13/x64/lib/python3.10/site-packages/playwright/_impl/_page.py", line 691, in click
-    return await self._main_frame.click(**locals_to_params(locals()))
-  File "/opt/hostedtoolcache/Python/3.10.13/x64/lib/python3.10/site-packages/playwright/_impl/_frame.py", line 483, in click
-    await self._channel.send("click", locals_to_params(locals()))
-  File "/opt/hostedtoolcache/Python/3.10.13/x64/lib/python3.10/site-packages/playwright/_impl/_connection.py", line 61, in send
-    return await self._connection.wrap_api_call(
-  File "/opt/hostedtoolcache/Python/3.10.13/x64/lib/python3.10/site-packages/playwright/_impl/_connection.py", line 490, in wrap_api_call
-    return await cb()
-  File "/opt/hostedtoolcache/Python/3.10.13/x64/lib/python3.10/site-packages/playwright/_impl/_connection.py", line 99, in inner_send
-    result = next(iter(done)).result()
-playwright._impl._api_types.TimeoutError: Timeout 30000ms exceeded.
-=========================== logs ===========================
-waiting for locator("xpath=//a[@class='talon_close_button']")
-  locator resolved to 2 elements. Proceeding with the first one: <a class="talon_close_button" onclick="talon.close(…>…</a>
-attempting click action
-  waiting for element to be visible, enabled and stable
-    element is not visible - waiting...
-============================================================
+2023-10-31 22:32:19 | INFO    | __main__:stash:140 | run - {'image': '20231029', 'version': '0.9.2.post3', 'role': 'EpicPlayer', 'headless': True, 'self_supervised': True}
+2023-10-31 22:32:28 | INFO    | __main__:claim_epic_games:96 | Try to flush cookie - {'task': 'claim_epic_games'}
+2023-10-31 22:32:32 | INFO    | epic_games.agent:_login:186 | login-with-email - {'url': 'https://www.epicgames.com/id/login?lang=en-US&noHostRedirect=true&redirectUrl=https://store.epicgames.com/en-US/free-games'}
+2023-10-31 22:32:37 | DEBUG    | epic_games.agent:insert_challenge:164 | Attack challenge - {'stage': 'email_exists_prod'}
+2023-10-31 22:32:40 | DEBUG    | hcaptcha_challenger.agents.playwright.control:lookup_objects:472 | catch model - {'yolo': 'head_of_the_animal_turtle_2309_yolov8s.onnx', 'ash': 'please click on the head of the animal default'}
+2023-10-31 22:32:43 | DEBUG    | hcaptcha_challenger.agents.playwright.control:lookup_objects:472 | catch model - {'yolo': 'head_of_the_animal_turtle_2309_yolov8s.onnx', 'ash': 'please click on the head of the animal default'}
+2023-10-31 22:32:44 | DEBUG    | epic_games.agent:insert_challenge:167 | Parse result - {'stage': 'email_exists_prod', 'result': 'retry'}
+2023-10-31 22:32:50 | DEBUG    | hcaptcha_challenger.agents.playwright.control:_rank_models:414 | rank model - {'resnet': 'nested_smallest_bird2309.onnx', 'prompt': 'Please click on each image containing the smallest animal.'}
+2023-10-31 22:32:56 | DEBUG    | epic_games.agent:insert_challenge:167 | Parse result - {'stage': 'email_exists_prod', 'result': 'success'}
+2023-10-31 22:33:02 | DEBUG    | epic_games.agent:insert_challenge:158 | Attack challenge - {'stage': 'login_prod'}
+2023-10-31 22:33:03 | DEBUG    | hcaptcha_challenger.agents.playwright.control:_rank_models:414 | rank model - {'resnet': 'nested_smallest_bird2309.onnx', 'prompt': 'Please click on each image containing the smallest аnіmal.'}
+2023-10-31 22:33:10 | DEBUG    | epic_games.agent:insert_challenge:167 | Parse result - {'stage': 'login_prod', 'result': 'success'}
+2023-10-31 22:33:15 | SUCCESS    | epic_games.agent:_login:202 | login - {'result': 'Successfully refreshed tokens'}
+2023-10-31 22:33:23 | SUCCESS    | epic_games.agent:flush_token:229 | flush_token - {'path': PosixPath('/home/runner/work/Epic_Auto/Epic_Auto/epic/user_data_dir/epic-games@461387340/ctx_cookie.json')}
+2023-10-31 22:33:25 | DEBUG    | __main__:create_tasks:65 | Put task - {'title': 'The Evil Within 2', 'url': 'https://store.epicgames.com/en-US/p/the-evil-within-2'}
+2023-10-31 22:33:25 | INFO    | epic_games.agent:claim_weekly_games:237 | claim_weekly_games - {'action': 'go to store', 'url': 'https://store.epicgames.com/en-US/p/the-evil-within-2'}
+2023-10-31 22:33:36 | INFO    | epic_games.agent:claim_weekly_games:268 | claim_weekly_games - {'action': 'move to webPurchaseContainer iframe'}
+2023-10-31 22:33:39 | INFO    | epic_games.agent:claim_weekly_games:270 | claim_weekly_games - {'action': 'click payment button'}
+2023-10-31 22:33:44 | DEBUG    | hcaptcha_challenger.agents.playwright.control:_rank_models:414 | rank model - {'resnet': 'nested_smallest_bird2309.onnx', 'prompt': 'Please click on each image containing the smallest аnimаl.'}
+2023-10-31 22:33:57 | SUCCESS    | epic_games.agent:claim_weekly_games:281 | claim_weekly_games - {'action': 'success', 'url': 'https://store.epicgames.com/en-US/cart/success'}
