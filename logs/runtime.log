@@ -1,7 +1,7 @@
-2023-11-07 22:32:11 | INFO    | __main__:stash:140 | run - {'image': '20231105', 'version': '0.9.3', 'role': 'EpicPlayer', 'headless': True, 'self_supervised': True}
-2023-11-07 22:32:19 | DEBUG    | __main__:create_tasks:65 | Put task - {'title': 'Turnip Boy Commits Tax Evasion', 'url': 'https://store.epicgames.com/en-US/p/turnip-boy-commits-tax-evasion-fb2084'}
-2023-11-07 22:32:24 | INFO    | epic_games.agent:claim_weekly_games:237 | claim_weekly_games - {'action': 'go to store', 'url': 'https://store.epicgames.com/en-US/p/turnip-boy-commits-tax-evasion-fb2084'}
-2023-11-07 22:32:33 | INFO    | epic_games.agent:claim_weekly_games:268 | claim_weekly_games - {'action': 'move to webPurchaseContainer iframe'}
-2023-11-07 22:32:36 | INFO    | epic_games.agent:claim_weekly_games:270 | claim_weekly_games - {'action': 'click payment button'}
-2023-11-07 22:32:41 | DEBUG    | hcaptcha_challenger.agents.playwright.control:_match_solution:387 | match model - {'resnet': 'animal2310.onnx', 'prompt': 'Please click each image containing an animаl'}
-2023-11-07 22:32:50 | SUCCESS    | epic_games.agent:claim_weekly_games:281 | claim_weekly_games - {'action': 'success', 'url': 'https://store.epicgames.com/en-US/cart/success'}
+2023-11-14 22:32:48 | INFO    | __main__:stash:140 | run - {'image': '20231105', 'version': '0.9.5.post1', 'role': 'EpicPlayer', 'headless': True, 'self_supervised': True}
+2023-11-14 22:33:01 | DEBUG    | __main__:create_tasks:65 | Put task - {'title': 'Golden Light', 'url': 'https://store.epicgames.com/en-US/p/golden-light-f543b3'}
+2023-11-14 22:33:06 | INFO    | epic_games.agent:claim_weekly_games:237 | claim_weekly_games - {'action': 'go to store', 'url': 'https://store.epicgames.com/en-US/p/golden-light-f543b3'}
+2023-11-14 22:33:20 | INFO    | epic_games.agent:claim_weekly_games:268 | claim_weekly_games - {'action': 'move to webPurchaseContainer iframe'}
+2023-11-14 22:33:24 | INFO    | epic_games.agent:claim_weekly_games:270 | claim_weekly_games - {'action': 'click payment button'}
+2023-11-14 22:33:30 | DEBUG    | hcaptcha_challenger.agents.playwright.control:_rank_models:408 | rank model - {'resnet': 'nested_largest_lion2309.onnx', 'prompt': 'Please click on each image containing the largest animal in real lіfe'}
+2023-11-14 22:33:43 | SUCCESS    | epic_games.agent:claim_weekly_games:281 | claim_weekly_games - {'action': 'success', 'url': 'https://store.epicgames.com/en-US/cart/success'}
