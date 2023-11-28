@@ -1,7 +1,67 @@
-2023-11-14 22:32:48 | INFO    | __main__:stash:140 | run - {'image': '20231105', 'version': '0.9.5.post1', 'role': 'EpicPlayer', 'headless': True, 'self_supervised': True}
-2023-11-14 22:33:01 | DEBUG    | __main__:create_tasks:65 | Put task - {'title': 'Golden Light', 'url': 'https://store.epicgames.com/en-US/p/golden-light-f543b3'}
-2023-11-14 22:33:06 | INFO    | epic_games.agent:claim_weekly_games:237 | claim_weekly_games - {'action': 'go to store', 'url': 'https://store.epicgames.com/en-US/p/golden-light-f543b3'}
-2023-11-14 22:33:20 | INFO    | epic_games.agent:claim_weekly_games:268 | claim_weekly_games - {'action': 'move to webPurchaseContainer iframe'}
-2023-11-14 22:33:24 | INFO    | epic_games.agent:claim_weekly_games:270 | claim_weekly_games - {'action': 'click payment button'}
-2023-11-14 22:33:30 | DEBUG    | hcaptcha_challenger.agents.playwright.control:_rank_models:408 | rank model - {'resnet': 'nested_largest_lion2309.onnx', 'prompt': 'Please click on each image containing the largest animal in real lіfe'}
-2023-11-14 22:33:43 | SUCCESS    | epic_games.agent:claim_weekly_games:281 | claim_weekly_games - {'action': 'success', 'url': 'https://store.epicgames.com/en-US/cart/success'}
+2023-11-28 22:33:08 | INFO    | __main__:stash:131 | run - {'image': '20231121', 'version': '0.10.1.post1', 'role': 'EpicPlayer', 'headless': True}
+2023-11-28 22:33:17 | INFO    | __main__:claim_epic_games:97 | Try to flush cookie - {'task': 'claim_epic_games'}
+2023-11-28 22:33:20 | INFO    | epic_games.agent:_login:237 | login-with-email - {'url': 'https://www.epicgames.com/id/login?lang=en-US&noHostRedirect=true&redirectUrl=https://store.epicgames.com/en-US/free-games'}
+2023-11-28 22:33:24 | DEBUG    | epic_games.agent:insert_challenge:215 | Attack challenge - {'stage': 'email_exists_prod'}
+2023-11-28 22:33:24 | DEBUG    | hcaptcha_challenger.agents.playwright.control:_parse_label:241 | get task - {'prompt': "Please click on the object that isn't following the pattern"}
+2023-11-28 22:33:29 | DEBUG    | epic_games.agent:insert_challenge:218 | Parse result - {'stage': 'email_exists_prod', 'result': <Status.CHALLENGE_RETRY: 'retry'>}
+2023-11-28 22:33:34 | DEBUG    | hcaptcha_challenger.agents.playwright.control:_parse_label:241 | get task - {'prompt': 'Please click on each image containing the largest animal in real life'}
+2023-11-28 22:33:36 | DEBUG    | hcaptcha_challenger.agents.playwright.control:_catch_all_binary_challenge:474 | handle task - {'unsupervised': 'binary', 'candidate_labels': ['This is a picture that looks like parrot.', 'This is a picture that looks like ladybug.', 'This is a picture that looks like crab.', 'This is a picture that looks like bee.', 'This is a picture that looks like frog.', 'This is a picture that looks like bat.', 'This is a picture that looks like butterfly.', 'This is a picture that looks like dragonfly.', 'This is a picture that looks like giraffe.', 'This is a picture that looks like duck.', 'This is a picture that looks like cookie.', 'This is a picture that looks like turtle.', 'This is a picture that looks like dog.', 'This is a picture that looks like cat.', 'This is a picture that looks like tiger.'], 'prompt': 'Please click on each image containing the largest animal in real life', 'timit': '0.956s'}
+2023-11-28 22:33:56 | DEBUG    | epic_games.agent:insert_challenge:218 | Parse result - {'stage': 'email_exists_prod', 'result': <Status.CHALLENGE_SUCCESS: 'success'>}
+2023-11-28 22:34:26 | WARNING    | epic_games.agent:authorize:266 | 执行超时 - {'task': 'authorize', 'retry': 0}
+2023-11-28 22:34:28 | INFO    | epic_games.agent:_login:237 | login-with-email - {'url': 'https://www.epicgames.com/id/login?lang=en-US&noHostRedirect=true&redirectUrl=https://store.epicgames.com/en-US/free-games'}
+2023-11-28 22:34:32 | DEBUG    | epic_games.agent:insert_challenge:215 | Attack challenge - {'stage': 'email_exists_prod'}
+2023-11-28 22:34:32 | DEBUG    | hcaptcha_challenger.agents.playwright.control:_parse_label:241 | get task - {'prompt': "Please click on the object that isn't following the pattern"}
+2023-11-28 22:34:37 | DEBUG    | epic_games.agent:insert_challenge:218 | Parse result - {'stage': 'email_exists_prod', 'result': <Status.CHALLENGE_RETRY: 'retry'>}
+2023-11-28 22:34:41 | DEBUG    | hcaptcha_challenger.agents.playwright.control:_parse_label:241 | get task - {'prompt': 'Please click each image containing an animal with four legs'}
+2023-11-28 22:34:42 | DEBUG    | hcaptcha_challenger.agents.playwright.control:_catch_all_binary_challenge:474 | handle task - {'unsupervised': 'binary', 'candidate_labels': ['This is a picture that looks like animal with four legs.', "This is a picture that don't look like animal with four legs."], 'prompt': 'Please click each image containing an animal with four legs', 'timit': '0.794s'}
+2023-11-28 22:34:51 | DEBUG    | epic_games.agent:insert_challenge:218 | Parse result - {'stage': 'email_exists_prod', 'result': <Status.CHALLENGE_RETRY: 'retry'>}
+2023-11-28 22:34:53 | DEBUG    | hcaptcha_challenger.agents.playwright.control:_parse_label:241 | get task - {'prompt': 'Please click on the most similar object to the following reference shape:'}
+2023-11-28 22:35:01 | DEBUG    | epic_games.agent:insert_challenge:218 | Parse result - {'stage': 'email_exists_prod', 'result': <Status.CHALLENGE_RETRY: 'retry'>}
+2023-11-28 22:35:04 | DEBUG    | hcaptcha_challenger.agents.playwright.control:_parse_label:241 | get task - {'prompt': 'Please click each image containing an animal with four legs'}
+2023-11-28 22:35:05 | DEBUG    | hcaptcha_challenger.agents.playwright.control:_catch_all_binary_challenge:474 | handle task - {'unsupervised': 'binary', 'candidate_labels': ['This is a picture that looks like animal with four legs.', "This is a picture that don't look like animal with four legs."], 'prompt': 'Please click each image containing an animal with four legs', 'timit': '0.713s'}
+2023-11-28 22:35:16 | DEBUG    | epic_games.agent:insert_challenge:218 | Parse result - {'stage': 'email_exists_prod', 'result': <Status.CHALLENGE_RETRY: 'retry'>}
+2023-11-28 22:35:20 | DEBUG    | hcaptcha_challenger.agents.playwright.control:_parse_label:241 | get task - {'prompt': 'Please click each image containing an animal with four legs'}
+2023-11-28 22:35:21 | DEBUG    | hcaptcha_challenger.agents.playwright.control:_catch_all_binary_challenge:474 | handle task - {'unsupervised': 'binary', 'candidate_labels': ['This is a picture that looks like animal with four legs.', "This is a picture that don't look like animal with four legs."], 'prompt': 'Please click each image containing an animal with four legs', 'timit': '0.743s'}
+2023-11-28 22:35:40 | DEBUG    | epic_games.agent:insert_challenge:218 | Parse result - {'stage': 'email_exists_prod', 'result': <Status.CHALLENGE_RETRY: 'retry'>}
+2023-11-28 22:35:43 | DEBUG    | hcaptcha_challenger.agents.playwright.control:_parse_label:241 | get task - {'prompt': 'Please click on all objects that make music'}
+2023-11-28 22:35:44 | DEBUG    | hcaptcha_challenger.agents.playwright.control:_catch_all_binary_challenge:474 | handle task - {'unsupervised': 'binary', 'candidate_labels': ['This is a picture that looks like please click on all objects that make music.', "This is a picture that don't look like please click on all objects that make music."], 'prompt': 'Please click on all objects that make music', 'timit': '0.704s'}
+2023-11-28 22:35:55 | DEBUG    | epic_games.agent:insert_challenge:218 | Parse result - {'stage': 'email_exists_prod', 'result': <Status.CHALLENGE_RETRY: 'retry'>}
+2023-11-28 22:35:58 | DEBUG    | hcaptcha_challenger.agents.playwright.control:_parse_label:241 | get task - {'prompt': 'Please click on the most similar object to the following reference shape:'}
+2023-11-28 22:36:00 | DEBUG    | hcaptcha_challenger.agents.playwright.control:lookup_objects:317 | handle task - {'catch_model': 'most_similar_object_hexagon_2309_yolov8n-seg.onnx', 'ash': 'please click on the most similar object to the following reference shape: default'}
+2023-11-28 22:36:02 | DEBUG    | hcaptcha_challenger.agents.playwright.control:lookup_objects:317 | handle task - {'catch_model': 'most_similar_object_hexagon_2309_yolov8n-seg.onnx', 'ash': 'please click on the most similar object to the following reference shape: default'}
+2023-11-28 22:36:04 | DEBUG    | epic_games.agent:insert_challenge:218 | Parse result - {'stage': 'email_exists_prod', 'result': <Status.CHALLENGE_SUCCESS: 'success'>}
+2023-11-28 22:36:34 | WARNING    | epic_games.agent:authorize:266 | 执行超时 - {'task': 'authorize', 'retry': 1}
+2023-11-28 22:36:36 | INFO    | epic_games.agent:_login:237 | login-with-email - {'url': 'https://www.epicgames.com/id/login?lang=en-US&noHostRedirect=true&redirectUrl=https://store.epicgames.com/en-US/free-games'}
+2023-11-28 22:36:40 | DEBUG    | epic_games.agent:insert_challenge:215 | Attack challenge - {'stage': 'email_exists_prod'}
+2023-11-28 22:36:40 | DEBUG    | hcaptcha_challenger.agents.playwright.control:_parse_label:241 | get task - {'prompt': 'Please click on the most similar object to the following reference shape:'}
+2023-11-28 22:36:42 | DEBUG    | hcaptcha_challenger.agents.playwright.control:lookup_objects:317 | handle task - {'catch_model': 'most_similar_object_hexagon_2309_yolov8n-seg.onnx', 'ash': 'please click on the most similar object to the following reference shape: default'}
+2023-11-28 22:36:46 | DEBUG    | epic_games.agent:insert_challenge:218 | Parse result - {'stage': 'email_exists_prod', 'result': <Status.CHALLENGE_RETRY: 'retry'>}
+2023-11-28 22:36:49 | DEBUG    | hcaptcha_challenger.agents.playwright.control:_parse_label:241 | get task - {'prompt': 'Please click on the most similar object to the following reference shape:'}
+2023-11-28 22:36:58 | DEBUG    | epic_games.agent:insert_challenge:218 | Parse result - {'stage': 'email_exists_prod', 'result': <Status.CHALLENGE_RETRY: 'retry'>}
+2023-11-28 22:37:01 | DEBUG    | hcaptcha_challenger.agents.playwright.control:_parse_label:241 | get task - {'prompt': 'Please click each image containing an animal with four legs'}
+2023-11-28 22:37:01 | DEBUG    | hcaptcha_challenger.agents.playwright.control:_catch_all_binary_challenge:474 | handle task - {'unsupervised': 'binary', 'candidate_labels': ['This is a picture that looks like animal with four legs.', "This is a picture that don't look like animal with four legs."], 'prompt': 'Please click each image containing an animal with four legs', 'timit': '0.709s'}
+2023-11-28 22:37:09 | DEBUG    | epic_games.agent:insert_challenge:218 | Parse result - {'stage': 'email_exists_prod', 'result': <Status.CHALLENGE_SUCCESS: 'success'>}
+2023-11-28 22:37:39 | WARNING    | epic_games.agent:authorize:266 | 执行超时 - {'task': 'authorize', 'retry': 2}
+2023-11-28 22:37:40 | ERROR    | __main__:run:158 | An error has been caught in function 'run', process 'MainProcess' (3640), thread 'MainThread' (140662995643264): - {}
+Traceback (most recent call last):
+  File "/home/runner/work/Epic_Auto/Epic_Auto/epic/src/claim.py", line 162, in <module>
+    asyncio.run(run())
+  File "/opt/hostedtoolcache/Python/3.10.13/x64/lib/python3.10/asyncio/runners.py", line 44, in run
+    return loop.run_until_complete(main)
+  File "/opt/hostedtoolcache/Python/3.10.13/x64/lib/python3.10/asyncio/base_events.py", line 636, in run_until_complete
+    self.run_forever()
+  File "/opt/hostedtoolcache/Python/3.10.13/x64/lib/python3.10/asyncio/base_events.py", line 603, in run_forever
+    self._run_once()
+  File "/opt/hostedtoolcache/Python/3.10.13/x64/lib/python3.10/asyncio/base_events.py", line 1909, in _run_once
+    handle._run()
+  File "/opt/hostedtoolcache/Python/3.10.13/x64/lib/python3.10/asyncio/events.py", line 80, in _run
+    self._context.run(self._callback, *self._args)
+> File "/home/runner/work/Epic_Auto/Epic_Auto/epic/src/claim.py", line 158, in run
+    await agent.stash()
+  File "/home/runner/work/Epic_Auto/Epic_Auto/epic/src/claim.py", line 151, in stash
+    await self.claim_epic_games(context)
+  File "/home/runner/work/Epic_Auto/Epic_Auto/epic/src/claim.py", line 98, in claim_epic_games
+    if await epic.authorize(page):
+  File "/home/runner/work/Epic_Auto/Epic_Auto/epic/src/epic_games/agent.py", line 269, in authorize
+    raise RuntimeError(f"Failed to flush token - agent={self.__class__.__name__}")
+RuntimeError: Failed to flush token - agent=EpicGames
