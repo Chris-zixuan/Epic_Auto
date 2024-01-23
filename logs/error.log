@@ -1,0 +1,35 @@
+2024-01-23 22:34:20 | ERROR    | __main__:run:158 | An error has been caught in function 'run', process 'MainProcess' (3568), thread 'MainThread' (140361093434240): - {}
+Traceback (most recent call last):
+  File "/home/runner/work/Epic_Auto/Epic_Auto/epic/src/claim.py", line 162, in <module>
+    asyncio.run(run())
+  File "/opt/hostedtoolcache/Python/3.10.13/x64/lib/python3.10/asyncio/runners.py", line 44, in run
+    return loop.run_until_complete(main)
+  File "/opt/hostedtoolcache/Python/3.10.13/x64/lib/python3.10/asyncio/base_events.py", line 636, in run_until_complete
+    self.run_forever()
+  File "/opt/hostedtoolcache/Python/3.10.13/x64/lib/python3.10/asyncio/base_events.py", line 603, in run_forever
+    self._run_once()
+  File "/opt/hostedtoolcache/Python/3.10.13/x64/lib/python3.10/asyncio/base_events.py", line 1909, in _run_once
+    handle._run()
+  File "/opt/hostedtoolcache/Python/3.10.13/x64/lib/python3.10/asyncio/events.py", line 80, in _run
+    self._context.run(self._callback, *self._args)
+> File "/home/runner/work/Epic_Auto/Epic_Auto/epic/src/claim.py", line 158, in run
+    await agent.stash()
+  File "/home/runner/work/Epic_Auto/Epic_Auto/epic/src/claim.py", line 151, in stash
+    await self.claim_epic_games(context)
+  File "/home/runner/work/Epic_Auto/Epic_Auto/epic/src/claim.py", line 98, in claim_epic_games
+    if await epic.authorize(page):
+  File "/home/runner/work/Epic_Auto/Epic_Auto/epic/src/epic_games/agent.py", line 260, in authorize
+    match await self._login(page):
+  File "/home/runner/work/Epic_Auto/Epic_Auto/epic/src/epic_games/agent.py", line 244, in _login
+    await insert_challenge(stage="email_exists_prod")
+  File "/home/runner/work/Epic_Auto/Epic_Auto/epic/src/epic_games/agent.py", line 217, in insert_challenge
+    result = await self._solver.execute(window=stage)
+  File "/opt/hostedtoolcache/Python/3.10.13/x64/lib/python3.10/site-packages/hcaptcha_challenger/agents/playwright/control.py", line 626, in execute
+    self._parse_label()
+  File "/opt/hostedtoolcache/Python/3.10.13/x64/lib/python3.10/site-packages/hcaptcha_challenger/agents/playwright/control.py", line 240, in _parse_label
+    self.label = handle(self.prompt)
+  File "/opt/hostedtoolcache/Python/3.10.13/x64/lib/python3.10/site-packages/hcaptcha_challenger/components/prompt_handler.py", line 100, in handle
+    return split_prompt_message(label_cleaning(x), "en")
+  File "/opt/hostedtoolcache/Python/3.10.13/x64/lib/python3.10/site-packages/hcaptcha_challenger/components/prompt_handler.py", line 57, in split_prompt_message
+    return re.split(r"all (.*) images", prompt_message)[1].strip()
+IndexError: list index out of range
