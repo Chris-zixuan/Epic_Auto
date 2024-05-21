@@ -1,5 +1,5 @@
-2024-05-14 22:32:37 | INFO    | __main__:stash:131 | run - {'image': '20231121', 'version': '0.10.1.post2', 'role': 'EpicPlayer', 'headless': True}
-2024-05-14 22:33:14 | ERROR    | __main__:run:158 | An error has been caught in function 'run', process 'MainProcess' (3901), thread 'MainThread' (139994050186112): - {}
+2024-05-21 22:32:43 | INFO    | __main__:stash:131 | run - {'image': '20231121', 'version': '0.10.1.post2', 'role': 'EpicPlayer', 'headless': True}
+2024-05-21 22:33:16 | ERROR    | __main__:run:158 | An error has been caught in function 'run', process 'MainProcess' (3685), thread 'MainThread' (140407891643264): - {}
 Traceback (most recent call last):
   File "/home/runner/work/Epic_Auto/Epic_Auto/epic/src/claim.py", line 162, in <module>
     asyncio.run(run())
@@ -19,15 +19,15 @@ Traceback (most recent call last):
     if not await self.prelude_with_context(context):
   File "/home/runner/work/Epic_Auto/Epic_Auto/epic/src/claim.py", line 73, in prelude_with_context
     await page.goto(url, wait_until="networkidle")
-  File "/opt/hostedtoolcache/Python/3.10.14/x64/lib/python3.10/site-packages/playwright/async_api/_generated.py", line 8638, in goto
+  File "/opt/hostedtoolcache/Python/3.10.14/x64/lib/python3.10/site-packages/playwright/async_api/_generated.py", line 8657, in goto
     await self._impl_obj.goto(
-  File "/opt/hostedtoolcache/Python/3.10.14/x64/lib/python3.10/site-packages/playwright/_impl/_page.py", line 500, in goto
+  File "/opt/hostedtoolcache/Python/3.10.14/x64/lib/python3.10/site-packages/playwright/_impl/_page.py", line 519, in goto
     return await self._main_frame.goto(**locals_to_params(locals()))
   File "/opt/hostedtoolcache/Python/3.10.14/x64/lib/python3.10/site-packages/playwright/_impl/_frame.py", line 145, in goto
     await self._channel.send("goto", locals_to_params(locals()))
   File "/opt/hostedtoolcache/Python/3.10.14/x64/lib/python3.10/site-packages/playwright/_impl/_connection.py", line 59, in send
     return await self._connection.wrap_api_call(
-  File "/opt/hostedtoolcache/Python/3.10.14/x64/lib/python3.10/site-packages/playwright/_impl/_connection.py", line 513, in wrap_api_call
+  File "/opt/hostedtoolcache/Python/3.10.14/x64/lib/python3.10/site-packages/playwright/_impl/_connection.py", line 514, in wrap_api_call
     raise rewrite_error(error, f"{parsed_st['apiName']}: {error}") from None
 playwright._impl._errors.TimeoutError: Page.goto: Timeout 30000ms exceeded.
 Call log:
