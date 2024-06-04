@@ -1,160 +1,5 @@
-2024-05-28 22:32:26 | INFO    | __main__:stash:131 | run - {'image': '20231121', 'version': '0.10.1.post2', 'role': 'EpicPlayer', 'headless': True}
-2024-05-28 22:32:34 | WARNING    | epic_games.agent:get_order_history:467 | Failed to get order history, cookie may have expired - {}
-2024-05-28 22:32:34 | DEBUG    | __main__:create_tasks:66 | Put task - {'title': 'Farming Simulator 22', 'url': 'https://store.epicgames.com/en-US/p/farming-simulator-22'}
-2024-05-28 22:32:38 | INFO    | epic_games.agent:claim_weekly_games:294 | claim_weekly_games - {'action': 'go to store', 'url': 'https://store.epicgames.com/en-US/p/farming-simulator-22'}
-2024-05-28 22:32:52 | INFO    | epic_games.agent:claim_weekly_games:326 | claim_weekly_games - {'action': 'move to webPurchaseContainer iframe'}
-2024-05-28 22:32:54 | INFO    | epic_games.agent:claim_weekly_games:328 | claim_weekly_games - {'action': 'click payment button'}
-2024-05-28 22:32:55 | ERROR    | hcaptcha_challenger.agents.playwright.control:handler:153 | 'utf-8' codec can't decode byte 0xce in position 0: invalid continuation byte - {}
-Traceback (most recent call last):
-  File "/home/runner/work/Epic_Auto/Epic_Auto/epic/src/claim.py", line 162, in <module>
-    asyncio.run(run())
-  File "/opt/hostedtoolcache/Python/3.10.14/x64/lib/python3.10/asyncio/runners.py", line 44, in run
-    return loop.run_until_complete(main)
-  File "/opt/hostedtoolcache/Python/3.10.14/x64/lib/python3.10/asyncio/base_events.py", line 636, in run_until_complete
-    self.run_forever()
-  File "/opt/hostedtoolcache/Python/3.10.14/x64/lib/python3.10/asyncio/base_events.py", line 603, in run_forever
-    self._run_once()
-  File "/opt/hostedtoolcache/Python/3.10.14/x64/lib/python3.10/asyncio/base_events.py", line 1909, in _run_once
-    handle._run()
-  File "/opt/hostedtoolcache/Python/3.10.14/x64/lib/python3.10/asyncio/events.py", line 80, in _run
-    self._context.run(self._callback, *self._args)
-> File "/opt/hostedtoolcache/Python/3.10.14/x64/lib/python3.10/site-packages/hcaptcha_challenger/agents/playwright/control.py", line 145, in handler
-    data = await response.json()
-  File "/opt/hostedtoolcache/Python/3.10.14/x64/lib/python3.10/site-packages/playwright/async_api/_generated.py", line 614, in json
-    return mapping.from_maybe_impl(await self._impl_obj.json())
-  File "/opt/hostedtoolcache/Python/3.10.14/x64/lib/python3.10/site-packages/playwright/_impl/_network.py", line 613, in json
-    return json.loads(await self.text())
-  File "/opt/hostedtoolcache/Python/3.10.14/x64/lib/python3.10/site-packages/playwright/_impl/_network.py", line 610, in text
-    return content.decode()
-UnicodeDecodeError: 'utf-8' codec can't decode byte 0xce in position 0: invalid continuation byte
-2024-05-28 22:33:28 | ERROR    | hcaptcha_challenger.agents.playwright.control:execute:615 | task interrupt <backcall> - {'reason': 'Failed to obtain challenge task'}
-2024-05-28 22:33:28 | DEBUG    | epic_games.agent:insert_challenge:106 | task done - {'sattus': 'success'}
-2024-05-28 22:33:31 | ERROR    | hcaptcha_challenger.agents.playwright.control:handler:153 | 'utf-8' codec can't decode byte 0xa5 in position 0: invalid start byte - {}
-Traceback (most recent call last):
-  File "/home/runner/work/Epic_Auto/Epic_Auto/epic/src/claim.py", line 162, in <module>
-    asyncio.run(run())
-  File "/opt/hostedtoolcache/Python/3.10.14/x64/lib/python3.10/asyncio/runners.py", line 44, in run
-    return loop.run_until_complete(main)
-  File "/opt/hostedtoolcache/Python/3.10.14/x64/lib/python3.10/asyncio/base_events.py", line 636, in run_until_complete
-    self.run_forever()
-  File "/opt/hostedtoolcache/Python/3.10.14/x64/lib/python3.10/asyncio/base_events.py", line 603, in run_forever
-    self._run_once()
-  File "/opt/hostedtoolcache/Python/3.10.14/x64/lib/python3.10/asyncio/base_events.py", line 1909, in _run_once
-    handle._run()
-  File "/opt/hostedtoolcache/Python/3.10.14/x64/lib/python3.10/asyncio/events.py", line 80, in _run
-    self._context.run(self._callback, *self._args)
-> File "/opt/hostedtoolcache/Python/3.10.14/x64/lib/python3.10/site-packages/hcaptcha_challenger/agents/playwright/control.py", line 145, in handler
-    data = await response.json()
-  File "/opt/hostedtoolcache/Python/3.10.14/x64/lib/python3.10/site-packages/playwright/async_api/_generated.py", line 614, in json
-    return mapping.from_maybe_impl(await self._impl_obj.json())
-  File "/opt/hostedtoolcache/Python/3.10.14/x64/lib/python3.10/site-packages/playwright/_impl/_network.py", line 613, in json
-    return json.loads(await self.text())
-  File "/opt/hostedtoolcache/Python/3.10.14/x64/lib/python3.10/site-packages/playwright/_impl/_network.py", line 610, in text
-    return content.decode()
-UnicodeDecodeError: 'utf-8' codec can't decode byte 0xa5 in position 0: invalid start byte
-2024-05-28 22:34:01 | INFO    | epic_games.agent:claim_weekly_games:294 | claim_weekly_games - {'action': 'go to store', 'url': 'https://store.epicgames.com/en-US/p/farming-simulator-22'}
-2024-05-28 22:34:11 | INFO    | epic_games.agent:claim_weekly_games:326 | claim_weekly_games - {'action': 'move to webPurchaseContainer iframe'}
-2024-05-28 22:34:13 | INFO    | epic_games.agent:claim_weekly_games:328 | claim_weekly_games - {'action': 'click payment button'}
-2024-05-28 22:34:14 | ERROR    | hcaptcha_challenger.agents.playwright.control:handler:153 | 'utf-8' codec can't decode byte 0x88 in position 1: invalid start byte - {}
-Traceback (most recent call last):
-  File "/home/runner/work/Epic_Auto/Epic_Auto/epic/src/claim.py", line 162, in <module>
-    asyncio.run(run())
-  File "/opt/hostedtoolcache/Python/3.10.14/x64/lib/python3.10/asyncio/runners.py", line 44, in run
-    return loop.run_until_complete(main)
-  File "/opt/hostedtoolcache/Python/3.10.14/x64/lib/python3.10/asyncio/base_events.py", line 636, in run_until_complete
-    self.run_forever()
-  File "/opt/hostedtoolcache/Python/3.10.14/x64/lib/python3.10/asyncio/base_events.py", line 603, in run_forever
-    self._run_once()
-  File "/opt/hostedtoolcache/Python/3.10.14/x64/lib/python3.10/asyncio/base_events.py", line 1909, in _run_once
-    handle._run()
-  File "/opt/hostedtoolcache/Python/3.10.14/x64/lib/python3.10/asyncio/events.py", line 80, in _run
-    self._context.run(self._callback, *self._args)
-> File "/opt/hostedtoolcache/Python/3.10.14/x64/lib/python3.10/site-packages/hcaptcha_challenger/agents/playwright/control.py", line 145, in handler
-    data = await response.json()
-  File "/opt/hostedtoolcache/Python/3.10.14/x64/lib/python3.10/site-packages/playwright/async_api/_generated.py", line 614, in json
-    return mapping.from_maybe_impl(await self._impl_obj.json())
-  File "/opt/hostedtoolcache/Python/3.10.14/x64/lib/python3.10/site-packages/playwright/_impl/_network.py", line 613, in json
-    return json.loads(await self.text())
-  File "/opt/hostedtoolcache/Python/3.10.14/x64/lib/python3.10/site-packages/playwright/_impl/_network.py", line 610, in text
-    return content.decode()
-UnicodeDecodeError: 'utf-8' codec can't decode byte 0x88 in position 1: invalid start byte
-2024-05-28 22:34:48 | ERROR    | hcaptcha_challenger.agents.playwright.control:execute:615 | task interrupt <backcall> - {'reason': 'Failed to obtain challenge task'}
-2024-05-28 22:34:48 | DEBUG    | epic_games.agent:insert_challenge:106 | task done - {'sattus': 'success'}
-2024-05-28 22:34:50 | ERROR    | hcaptcha_challenger.agents.playwright.control:handler:153 | 'utf-8' codec can't decode byte 0x8d in position 3: invalid start byte - {}
-Traceback (most recent call last):
-  File "/home/runner/work/Epic_Auto/Epic_Auto/epic/src/claim.py", line 162, in <module>
-    asyncio.run(run())
-  File "/opt/hostedtoolcache/Python/3.10.14/x64/lib/python3.10/asyncio/runners.py", line 44, in run
-    return loop.run_until_complete(main)
-  File "/opt/hostedtoolcache/Python/3.10.14/x64/lib/python3.10/asyncio/base_events.py", line 636, in run_until_complete
-    self.run_forever()
-  File "/opt/hostedtoolcache/Python/3.10.14/x64/lib/python3.10/asyncio/base_events.py", line 603, in run_forever
-    self._run_once()
-  File "/opt/hostedtoolcache/Python/3.10.14/x64/lib/python3.10/asyncio/base_events.py", line 1909, in _run_once
-    handle._run()
-  File "/opt/hostedtoolcache/Python/3.10.14/x64/lib/python3.10/asyncio/events.py", line 80, in _run
-    self._context.run(self._callback, *self._args)
-> File "/opt/hostedtoolcache/Python/3.10.14/x64/lib/python3.10/site-packages/hcaptcha_challenger/agents/playwright/control.py", line 145, in handler
-    data = await response.json()
-  File "/opt/hostedtoolcache/Python/3.10.14/x64/lib/python3.10/site-packages/playwright/async_api/_generated.py", line 614, in json
-    return mapping.from_maybe_impl(await self._impl_obj.json())
-  File "/opt/hostedtoolcache/Python/3.10.14/x64/lib/python3.10/site-packages/playwright/_impl/_network.py", line 613, in json
-    return json.loads(await self.text())
-  File "/opt/hostedtoolcache/Python/3.10.14/x64/lib/python3.10/site-packages/playwright/_impl/_network.py", line 610, in text
-    return content.decode()
-UnicodeDecodeError: 'utf-8' codec can't decode byte 0x8d in position 3: invalid start byte
-2024-05-28 22:35:20 | INFO    | epic_games.agent:claim_weekly_games:294 | claim_weekly_games - {'action': 'go to store', 'url': 'https://store.epicgames.com/en-US/p/farming-simulator-22'}
-2024-05-28 22:35:29 | INFO    | epic_games.agent:claim_weekly_games:326 | claim_weekly_games - {'action': 'move to webPurchaseContainer iframe'}
-2024-05-28 22:35:31 | INFO    | epic_games.agent:claim_weekly_games:328 | claim_weekly_games - {'action': 'click payment button'}
-2024-05-28 22:35:32 | ERROR    | hcaptcha_challenger.agents.playwright.control:handler:153 | 'utf-8' codec can't decode byte 0xd3 in position 0: invalid continuation byte - {}
-Traceback (most recent call last):
-  File "/home/runner/work/Epic_Auto/Epic_Auto/epic/src/claim.py", line 162, in <module>
-    asyncio.run(run())
-  File "/opt/hostedtoolcache/Python/3.10.14/x64/lib/python3.10/asyncio/runners.py", line 44, in run
-    return loop.run_until_complete(main)
-  File "/opt/hostedtoolcache/Python/3.10.14/x64/lib/python3.10/asyncio/base_events.py", line 636, in run_until_complete
-    self.run_forever()
-  File "/opt/hostedtoolcache/Python/3.10.14/x64/lib/python3.10/asyncio/base_events.py", line 603, in run_forever
-    self._run_once()
-  File "/opt/hostedtoolcache/Python/3.10.14/x64/lib/python3.10/asyncio/base_events.py", line 1909, in _run_once
-    handle._run()
-  File "/opt/hostedtoolcache/Python/3.10.14/x64/lib/python3.10/asyncio/events.py", line 80, in _run
-    self._context.run(self._callback, *self._args)
-> File "/opt/hostedtoolcache/Python/3.10.14/x64/lib/python3.10/site-packages/hcaptcha_challenger/agents/playwright/control.py", line 145, in handler
-    data = await response.json()
-  File "/opt/hostedtoolcache/Python/3.10.14/x64/lib/python3.10/site-packages/playwright/async_api/_generated.py", line 614, in json
-    return mapping.from_maybe_impl(await self._impl_obj.json())
-  File "/opt/hostedtoolcache/Python/3.10.14/x64/lib/python3.10/site-packages/playwright/_impl/_network.py", line 613, in json
-    return json.loads(await self.text())
-  File "/opt/hostedtoolcache/Python/3.10.14/x64/lib/python3.10/site-packages/playwright/_impl/_network.py", line 610, in text
-    return content.decode()
-UnicodeDecodeError: 'utf-8' codec can't decode byte 0xd3 in position 0: invalid continuation byte
-2024-05-28 22:36:06 | ERROR    | hcaptcha_challenger.agents.playwright.control:execute:615 | task interrupt <backcall> - {'reason': 'Failed to obtain challenge task'}
-2024-05-28 22:36:06 | DEBUG    | epic_games.agent:insert_challenge:106 | task done - {'sattus': 'success'}
-2024-05-28 22:36:08 | ERROR    | hcaptcha_challenger.agents.playwright.control:handler:153 | 'utf-8' codec can't decode byte 0x90 in position 0: invalid start byte - {}
-Traceback (most recent call last):
-  File "/home/runner/work/Epic_Auto/Epic_Auto/epic/src/claim.py", line 162, in <module>
-    asyncio.run(run())
-  File "/opt/hostedtoolcache/Python/3.10.14/x64/lib/python3.10/asyncio/runners.py", line 44, in run
-    return loop.run_until_complete(main)
-  File "/opt/hostedtoolcache/Python/3.10.14/x64/lib/python3.10/asyncio/base_events.py", line 636, in run_until_complete
-    self.run_forever()
-  File "/opt/hostedtoolcache/Python/3.10.14/x64/lib/python3.10/asyncio/base_events.py", line 603, in run_forever
-    self._run_once()
-  File "/opt/hostedtoolcache/Python/3.10.14/x64/lib/python3.10/asyncio/base_events.py", line 1909, in _run_once
-    handle._run()
-  File "/opt/hostedtoolcache/Python/3.10.14/x64/lib/python3.10/asyncio/events.py", line 80, in _run
-    self._context.run(self._callback, *self._args)
-> File "/opt/hostedtoolcache/Python/3.10.14/x64/lib/python3.10/site-packages/hcaptcha_challenger/agents/playwright/control.py", line 145, in handler
-    data = await response.json()
-  File "/opt/hostedtoolcache/Python/3.10.14/x64/lib/python3.10/site-packages/playwright/async_api/_generated.py", line 614, in json
-    return mapping.from_maybe_impl(await self._impl_obj.json())
-  File "/opt/hostedtoolcache/Python/3.10.14/x64/lib/python3.10/site-packages/playwright/_impl/_network.py", line 613, in json
-    return json.loads(await self.text())
-  File "/opt/hostedtoolcache/Python/3.10.14/x64/lib/python3.10/site-packages/playwright/_impl/_network.py", line 610, in text
-    return content.decode()
-UnicodeDecodeError: 'utf-8' codec can't decode byte 0x90 in position 0: invalid start byte
-2024-05-28 22:36:38 | ERROR    | __main__:run:158 | An error has been caught in function 'run', process 'MainProcess' (3599), thread 'MainThread' (140054499105664): - {}
+2024-06-04 22:33:24 | INFO    | __main__:stash:131 | run - {'image': '20231121', 'version': '0.10.1.post2', 'role': 'EpicPlayer', 'headless': True}
+2024-06-04 22:33:55 | ERROR    | __main__:run:158 | An error has been caught in function 'run', process 'MainProcess' (3672), thread 'MainThread' (139920435698560): - {}
 Traceback (most recent call last):
   File "/home/runner/work/Epic_Auto/Epic_Auto/epic/src/claim.py", line 162, in <module>
     asyncio.run(run())
@@ -170,41 +15,21 @@ Traceback (most recent call last):
     self._context.run(self._callback, *self._args)
 > File "/home/runner/work/Epic_Auto/Epic_Auto/epic/src/claim.py", line 158, in run
     await agent.stash()
-  File "/home/runner/work/Epic_Auto/Epic_Auto/epic/src/claim.py", line 151, in stash
-    await self.claim_epic_games(context)
-  File "/home/runner/work/Epic_Auto/Epic_Auto/epic/src/claim.py", line 122, in claim_epic_games
-    await epic.claim_weekly_games(page, single_promotions)
-  File "/opt/hostedtoolcache/Python/3.10.14/x64/lib/python3.10/site-packages/tenacity/_asyncio.py", line 142, in async_wrapped
-    return await fn(*args, **kwargs)
-  File "/opt/hostedtoolcache/Python/3.10.14/x64/lib/python3.10/site-packages/tenacity/_asyncio.py", line 58, in __call__
-    do = await self.iter(retry_state=retry_state)
-  File "/opt/hostedtoolcache/Python/3.10.14/x64/lib/python3.10/site-packages/tenacity/_asyncio.py", line 110, in iter
-    result = await action(retry_state)
-  File "/opt/hostedtoolcache/Python/3.10.14/x64/lib/python3.10/site-packages/tenacity/_asyncio.py", line 78, in inner
-    return fn(*args, **kwargs)
-  File "/opt/hostedtoolcache/Python/3.10.14/x64/lib/python3.10/site-packages/tenacity/__init__.py", line 410, in exc_check
-    raise retry_exc.reraise()
-  File "/opt/hostedtoolcache/Python/3.10.14/x64/lib/python3.10/site-packages/tenacity/__init__.py", line 183, in reraise
-    raise self.last_attempt.result()
-  File "/opt/hostedtoolcache/Python/3.10.14/x64/lib/python3.10/concurrent/futures/_base.py", line 451, in result
-    return self.__get_result()
-  File "/opt/hostedtoolcache/Python/3.10.14/x64/lib/python3.10/concurrent/futures/_base.py", line 403, in __get_result
-    raise self._exception
-  File "/opt/hostedtoolcache/Python/3.10.14/x64/lib/python3.10/site-packages/tenacity/_asyncio.py", line 61, in __call__
-    result = await fn(*args, **kwargs)
-  File "/home/runner/work/Epic_Auto/Epic_Auto/epic/src/epic_games/agent.py", line 338, in claim_weekly_games
-    await page.wait_for_url(recur_url)
-  File "/opt/hostedtoolcache/Python/3.10.14/x64/lib/python3.10/site-packages/playwright/async_api/_generated.py", line 8798, in wait_for_url
-    await self._impl_obj.wait_for_url(
-  File "/opt/hostedtoolcache/Python/3.10.14/x64/lib/python3.10/site-packages/playwright/_impl/_page.py", line 543, in wait_for_url
-    return await self._main_frame.wait_for_url(**locals_to_params(locals()))
-  File "/opt/hostedtoolcache/Python/3.10.14/x64/lib/python3.10/site-packages/playwright/_impl/_frame.py", line 233, in wait_for_url
-    async with self.expect_navigation(
-  File "/opt/hostedtoolcache/Python/3.10.14/x64/lib/python3.10/site-packages/playwright/_impl/_event_context_manager.py", line 33, in __aexit__
-    await self._future
-  File "/opt/hostedtoolcache/Python/3.10.14/x64/lib/python3.10/site-packages/playwright/_impl/_frame.py", line 208, in continuation
-    event = await waiter.result()
-playwright._impl._errors.TimeoutError: Timeout 30000ms exceeded.
-=========================== logs ===========================
-waiting for navigation to "https://store.epicgames.com/en-US/cart/success" until 'load'
-============================================================
+  File "/home/runner/work/Epic_Auto/Epic_Auto/epic/src/claim.py", line 149, in stash
+    if not await self.prelude_with_context(context):
+  File "/home/runner/work/Epic_Auto/Epic_Auto/epic/src/claim.py", line 73, in prelude_with_context
+    await page.goto(url, wait_until="networkidle")
+  File "/opt/hostedtoolcache/Python/3.10.14/x64/lib/python3.10/site-packages/playwright/async_api/_generated.py", line 8657, in goto
+    await self._impl_obj.goto(
+  File "/opt/hostedtoolcache/Python/3.10.14/x64/lib/python3.10/site-packages/playwright/_impl/_page.py", line 519, in goto
+    return await self._main_frame.goto(**locals_to_params(locals()))
+  File "/opt/hostedtoolcache/Python/3.10.14/x64/lib/python3.10/site-packages/playwright/_impl/_frame.py", line 145, in goto
+    await self._channel.send("goto", locals_to_params(locals()))
+  File "/opt/hostedtoolcache/Python/3.10.14/x64/lib/python3.10/site-packages/playwright/_impl/_connection.py", line 59, in send
+    return await self._connection.wrap_api_call(
+  File "/opt/hostedtoolcache/Python/3.10.14/x64/lib/python3.10/site-packages/playwright/_impl/_connection.py", line 514, in wrap_api_call
+    raise rewrite_error(error, f"{parsed_st['apiName']}: {error}") from None
+playwright._impl._errors.TimeoutError: Page.goto: Timeout 30000ms exceeded.
+Call log:
+navigating to "https://www.epicgames.com/account/creator-programs", waiting until "networkidle"
+
