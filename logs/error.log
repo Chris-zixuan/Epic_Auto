@@ -1,4 +1,4 @@
-2024-08-27 22:36:16 | ERROR    | __main__:run:158 | An error has been caught in function 'run', process 'MainProcess' (3670), thread 'MainThread' (139728508926848): - {}
+2024-09-03 22:36:54 | ERROR    | __main__:run:158 | An error has been caught in function 'run', process 'MainProcess' (3779), thread 'MainThread' (139754628545408): - {}
 Traceback (most recent call last):
   File "/home/runner/work/Epic_Auto/Epic_Auto/epic/src/claim.py", line 162, in <module>
     asyncio.run(run())
@@ -51,18 +51,18 @@ LocatorAssertions.to_have_text with timeout 5000ms
   -   unexpected value "Add To Cart"
   -   locator resolved to <button disabled type="button" aria-label="Loading" data-testid="add-to-cart-cta-button" class="eds_14hl3lj9 eds_14hl3ljc eds_14hl3ljh eds_1ypbntdc eds_14hl3lja eds_14hl3lj2 eds_14hl3lj5">…</button>
   -   unexpected value "Add To Cart"
-  -   locator resolved to <button type="button" aria-describedby="tippy-15" data-testid="add-to-cart-cta-button" class="eds_14hl3lj9 eds_14hl3ljc eds_14hl3ljh eds_1ypbntdc eds_14hl3lja eds_14hl3lj2">…</button>
+  -   locator resolved to <button type="button" aria-describedby="tippy-17" data-testid="add-to-cart-cta-button" class="eds_14hl3lj9 eds_14hl3ljc eds_14hl3ljh eds_1ypbntdc eds_14hl3lja eds_14hl3lj2">…</button>
   -   unexpected value "Add To Cart"
-  -   locator resolved to <button type="button" aria-describedby="tippy-15" data-testid="add-to-cart-cta-button" class="eds_14hl3lj9 eds_14hl3ljc eds_14hl3ljh eds_1ypbntdc eds_14hl3lja eds_14hl3lj2">…</button>
+  -   locator resolved to <button type="button" aria-describedby="tippy-17" data-testid="add-to-cart-cta-button" class="eds_14hl3lj9 eds_14hl3ljc eds_14hl3ljh eds_1ypbntdc eds_14hl3lja eds_14hl3lj2">…</button>
   -   unexpected value "Add To Cart"
-  -   locator resolved to <button type="button" aria-describedby="tippy-15" data-testid="add-to-cart-cta-button" class="eds_14hl3lj9 eds_14hl3ljc eds_14hl3ljh eds_1ypbntdc eds_14hl3lja eds_14hl3lj2">…</button>
+  -   locator resolved to <button type="button" aria-describedby="tippy-17" data-testid="add-to-cart-cta-button" class="eds_14hl3lj9 eds_14hl3ljc eds_14hl3ljh eds_1ypbntdc eds_14hl3lja eds_14hl3lj2">…</button>
   -   unexpected value "Add To Cart"
-  -   locator resolved to <button type="button" aria-describedby="tippy-15" data-testid="add-to-cart-cta-button" class="eds_14hl3lj9 eds_14hl3ljc eds_14hl3ljh eds_1ypbntdc eds_14hl3lja eds_14hl3lj2">…</button>
+  -   locator resolved to <button type="button" aria-describedby="tippy-17" data-testid="add-to-cart-cta-button" class="eds_14hl3lj9 eds_14hl3ljc eds_14hl3ljh eds_1ypbntdc eds_14hl3lja eds_14hl3lj2">…</button>
   -   unexpected value "Add To Cart"
-  -   locator resolved to <button type="button" aria-describedby="tippy-15" data-testid="add-to-cart-cta-button" class="eds_14hl3lj9 eds_14hl3ljc eds_14hl3ljh eds_1ypbntdc eds_14hl3lja eds_14hl3lj2">…</button>
+  -   locator resolved to <button type="button" aria-describedby="tippy-17" data-testid="add-to-cart-cta-button" class="eds_14hl3lj9 eds_14hl3ljc eds_14hl3ljh eds_1ypbntdc eds_14hl3lja eds_14hl3lj2">…</button>
   -   unexpected value "Add To Cart"
-  -   locator resolved to <button type="button" aria-describedby="tippy-15" data-testid="add-to-cart-cta-button" class="eds_14hl3lj9 eds_14hl3ljc eds_14hl3ljh eds_1ypbntdc eds_14hl3lja eds_14hl3lj2">…</button>
+  -   locator resolved to <button type="button" aria-describedby="tippy-17" data-testid="add-to-cart-cta-button" class="eds_14hl3lj9 eds_14hl3ljc eds_14hl3ljh eds_1ypbntdc eds_14hl3lja eds_14hl3lj2">…</button>
   -   unexpected value "Add To Cart"
-  -   locator resolved to <button type="button" aria-describedby="tippy-15" data-testid="add-to-cart-cta-button" class="eds_14hl3lj9 eds_14hl3ljc eds_14hl3ljh eds_1ypbntdc eds_14hl3lja eds_14hl3lj2">…</button>
+  -   locator resolved to <button type="button" aria-describedby="tippy-17" data-testid="add-to-cart-cta-button" class="eds_14hl3lj9 eds_14hl3ljc eds_14hl3ljh eds_1ypbntdc eds_14hl3lja eds_14hl3lj2">…</button>
   -   unexpected value "Add To Cart"
 

@@ -1,9 +1,9 @@
-2024-08-27 22:35:54 | INFO    | __main__:stash:131 | run - {'image': '20231121', 'version': '0.10.1.post2', 'role': 'EpicPlayer', 'headless': True}
-2024-08-27 22:35:59 | WARNING    | epic_games.agent:get_order_history:467 | Failed to get order history, cookie may have expired - {}
-2024-08-27 22:36:00 | DEBUG    | __main__:create_tasks:66 | Put task - {'title': 'The Callisto Protocol', 'url': 'https://store.epicgames.com/en-US/p/the-callisto-protocol'}
-2024-08-27 22:36:00 | DEBUG    | __main__:create_tasks:66 | Put task - {'title': 'Gigantic: Rampage Edition', 'url': 'https://store.epicgames.com/en-US/p/gigantic-rampage-edition-03f532'}
-2024-08-27 22:36:04 | INFO    | epic_games.agent:claim_weekly_games:294 | claim_weekly_games - {'action': 'go to store', 'url': 'https://store.epicgames.com/en-US/p/the-callisto-protocol'}
-2024-08-27 22:36:16 | ERROR    | __main__:run:158 | An error has been caught in function 'run', process 'MainProcess' (3670), thread 'MainThread' (139728508926848): - {}
+2024-09-03 22:36:32 | INFO    | __main__:stash:131 | run - {'image': '20231121', 'version': '0.10.1.post2', 'role': 'EpicPlayer', 'headless': True}
+2024-09-03 22:36:36 | WARNING    | epic_games.agent:get_order_history:467 | Failed to get order history, cookie may have expired - {}
+2024-09-03 22:36:36 | DEBUG    | __main__:create_tasks:66 | Put task - {'title': 'Wild Card Football', 'url': 'https://store.epicgames.com/en-US/p/wild-card-football'}
+2024-09-03 22:36:36 | DEBUG    | __main__:create_tasks:66 | Put task - {'title': 'Fallout® Classic Collection', 'url': 'https://store.epicgames.com/en-US/bundles/fallout-classic-collection'}
+2024-09-03 22:36:41 | INFO    | epic_games.agent:claim_weekly_games:294 | claim_weekly_games - {'action': 'go to store', 'url': 'https://store.epicgames.com/en-US/p/wild-card-football'}
+2024-09-03 22:36:54 | ERROR    | __main__:run:158 | An error has been caught in function 'run', process 'MainProcess' (3779), thread 'MainThread' (139754628545408): - {}
 Traceback (most recent call last):
   File "/home/runner/work/Epic_Auto/Epic_Auto/epic/src/claim.py", line 162, in <module>
     asyncio.run(run())
@@ -56,18 +56,18 @@ LocatorAssertions.to_have_text with timeout 5000ms
   -   unexpected value "Add To Cart"
   -   locator resolved to <button disabled type="button" aria-label="Loading" data-testid="add-to-cart-cta-button" class="eds_14hl3lj9 eds_14hl3ljc eds_14hl3ljh eds_1ypbntdc eds_14hl3lja eds_14hl3lj2 eds_14hl3lj5">…</button>
   -   unexpected value "Add To Cart"
-  -   locator resolved to <button type="button" aria-describedby="tippy-15" data-testid="add-to-cart-cta-button" class="eds_14hl3lj9 eds_14hl3ljc eds_14hl3ljh eds_1ypbntdc eds_14hl3lja eds_14hl3lj2">…</button>
+  -   locator resolved to <button type="button" aria-describedby="tippy-17" data-testid="add-to-cart-cta-button" class="eds_14hl3lj9 eds_14hl3ljc eds_14hl3ljh eds_1ypbntdc eds_14hl3lja eds_14hl3lj2">…</button>
   -   unexpected value "Add To Cart"
-  -   locator resolved to <button type="button" aria-describedby="tippy-15" data-testid="add-to-cart-cta-button" class="eds_14hl3lj9 eds_14hl3ljc eds_14hl3ljh eds_1ypbntdc eds_14hl3lja eds_14hl3lj2">…</button>
+  -   locator resolved to <button type="button" aria-describedby="tippy-17" data-testid="add-to-cart-cta-button" class="eds_14hl3lj9 eds_14hl3ljc eds_14hl3ljh eds_1ypbntdc eds_14hl3lja eds_14hl3lj2">…</button>
   -   unexpected value "Add To Cart"
-  -   locator resolved to <button type="button" aria-describedby="tippy-15" data-testid="add-to-cart-cta-button" class="eds_14hl3lj9 eds_14hl3ljc eds_14hl3ljh eds_1ypbntdc eds_14hl3lja eds_14hl3lj2">…</button>
+  -   locator resolved to <button type="button" aria-describedby="tippy-17" data-testid="add-to-cart-cta-button" class="eds_14hl3lj9 eds_14hl3ljc eds_14hl3ljh eds_1ypbntdc eds_14hl3lja eds_14hl3lj2">…</button>
   -   unexpected value "Add To Cart"
-  -   locator resolved to <button type="button" aria-describedby="tippy-15" data-testid="add-to-cart-cta-button" class="eds_14hl3lj9 eds_14hl3ljc eds_14hl3ljh eds_1ypbntdc eds_14hl3lja eds_14hl3lj2">…</button>
+  -   locator resolved to <button type="button" aria-describedby="tippy-17" data-testid="add-to-cart-cta-button" class="eds_14hl3lj9 eds_14hl3ljc eds_14hl3ljh eds_1ypbntdc eds_14hl3lja eds_14hl3lj2">…</button>
   -   unexpected value "Add To Cart"
-  -   locator resolved to <button type="button" aria-describedby="tippy-15" data-testid="add-to-cart-cta-button" class="eds_14hl3lj9 eds_14hl3ljc eds_14hl3ljh eds_1ypbntdc eds_14hl3lja eds_14hl3lj2">…</button>
+  -   locator resolved to <button type="button" aria-describedby="tippy-17" data-testid="add-to-cart-cta-button" class="eds_14hl3lj9 eds_14hl3ljc eds_14hl3ljh eds_1ypbntdc eds_14hl3lja eds_14hl3lj2">…</button>
   -   unexpected value "Add To Cart"
-  -   locator resolved to <button type="button" aria-describedby="tippy-15" data-testid="add-to-cart-cta-button" class="eds_14hl3lj9 eds_14hl3ljc eds_14hl3ljh eds_1ypbntdc eds_14hl3lja eds_14hl3lj2">…</button>
+  -   locator resolved to <button type="button" aria-describedby="tippy-17" data-testid="add-to-cart-cta-button" class="eds_14hl3lj9 eds_14hl3ljc eds_14hl3ljh eds_1ypbntdc eds_14hl3lja eds_14hl3lj2">…</button>
   -   unexpected value "Add To Cart"
-  -   locator resolved to <button type="button" aria-describedby="tippy-15" data-testid="add-to-cart-cta-button" class="eds_14hl3lj9 eds_14hl3ljc eds_14hl3ljh eds_1ypbntdc eds_14hl3lja eds_14hl3lj2">…</button>
+  -   locator resolved to <button type="button" aria-describedby="tippy-17" data-testid="add-to-cart-cta-button" class="eds_14hl3lj9 eds_14hl3ljc eds_14hl3ljh eds_1ypbntdc eds_14hl3lja eds_14hl3lj2">…</button>
   -   unexpected value "Add To Cart"
 
