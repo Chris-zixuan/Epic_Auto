@@ -1,4 +1,4 @@
-2024-10-08 22:40:22 | ERROR    | __main__:run:158 | An error has been caught in function 'run', process 'MainProcess' (3803), thread 'MainThread' (140451403287424): - {}
+2024-10-15 22:39:12 | ERROR    | __main__:run:158 | An error has been caught in function 'run', process 'MainProcess' (3623), thread 'MainThread' (139949778819968): - {}
 Traceback (most recent call last):
   File "/home/runner/work/Epic_Auto/Epic_Auto/epic/src/claim.py", line 162, in <module>
     asyncio.run(run())
@@ -14,21 +14,55 @@ Traceback (most recent call last):
     self._context.run(self._callback, *self._args)
 > File "/home/runner/work/Epic_Auto/Epic_Auto/epic/src/claim.py", line 158, in run
     await agent.stash()
-  File "/home/runner/work/Epic_Auto/Epic_Auto/epic/src/claim.py", line 149, in stash
-    if not await self.prelude_with_context(context):
-  File "/home/runner/work/Epic_Auto/Epic_Auto/epic/src/claim.py", line 73, in prelude_with_context
-    await page.goto(url, wait_until="networkidle")
-  File "/opt/hostedtoolcache/Python/3.10.15/x64/lib/python3.10/site-packages/playwright/async_api/_generated.py", line 8810, in goto
-    await self._impl_obj.goto(
-  File "/opt/hostedtoolcache/Python/3.10.15/x64/lib/python3.10/site-packages/playwright/_impl/_page.py", line 524, in goto
-    return await self._main_frame.goto(**locals_to_params(locals()))
-  File "/opt/hostedtoolcache/Python/3.10.15/x64/lib/python3.10/site-packages/playwright/_impl/_frame.py", line 145, in goto
-    await self._channel.send("goto", locals_to_params(locals()))
-  File "/opt/hostedtoolcache/Python/3.10.15/x64/lib/python3.10/site-packages/playwright/_impl/_connection.py", line 59, in send
-    return await self._connection.wrap_api_call(
-  File "/opt/hostedtoolcache/Python/3.10.15/x64/lib/python3.10/site-packages/playwright/_impl/_connection.py", line 514, in wrap_api_call
-    raise rewrite_error(error, f"{parsed_st['apiName']}: {error}") from None
-playwright._impl._errors.TimeoutError: Page.goto: Timeout 30000ms exceeded.
+  File "/home/runner/work/Epic_Auto/Epic_Auto/epic/src/claim.py", line 151, in stash
+    await self.claim_epic_games(context)
+  File "/home/runner/work/Epic_Auto/Epic_Auto/epic/src/claim.py", line 122, in claim_epic_games
+    await epic.claim_weekly_games(page, single_promotions)
+  File "/opt/hostedtoolcache/Python/3.10.15/x64/lib/python3.10/site-packages/tenacity/asyncio/__init__.py", line 189, in async_wrapped
+    return await copy(fn, *args, **kwargs)
+  File "/opt/hostedtoolcache/Python/3.10.15/x64/lib/python3.10/site-packages/tenacity/asyncio/__init__.py", line 111, in __call__
+    do = await self.iter(retry_state=retry_state)
+  File "/opt/hostedtoolcache/Python/3.10.15/x64/lib/python3.10/site-packages/tenacity/asyncio/__init__.py", line 153, in iter
+    result = await action(retry_state)
+  File "/opt/hostedtoolcache/Python/3.10.15/x64/lib/python3.10/site-packages/tenacity/_utils.py", line 99, in inner
+    return call(*args, **kwargs)
+  File "/opt/hostedtoolcache/Python/3.10.15/x64/lib/python3.10/site-packages/tenacity/__init__.py", line 398, in <lambda>
+    self._add_action_func(lambda rs: rs.outcome.result())
+  File "/opt/hostedtoolcache/Python/3.10.15/x64/lib/python3.10/concurrent/futures/_base.py", line 451, in result
+    return self.__get_result()
+  File "/opt/hostedtoolcache/Python/3.10.15/x64/lib/python3.10/concurrent/futures/_base.py", line 403, in __get_result
+    raise self._exception
+  File "/opt/hostedtoolcache/Python/3.10.15/x64/lib/python3.10/site-packages/tenacity/asyncio/__init__.py", line 114, in __call__
+    result = await fn(*args, **kwargs)
+  File "/home/runner/work/Epic_Auto/Epic_Auto/epic/src/epic_games/agent.py", line 310, in claim_weekly_games
+    await expect(cta_btn).to_have_text("View In Cart")
+  File "/opt/hostedtoolcache/Python/3.10.15/x64/lib/python3.10/site-packages/playwright/async_api/_generated.py", line 19164, in to_have_text
+    await self._impl_obj.to_have_text(
+  File "/opt/hostedtoolcache/Python/3.10.15/x64/lib/python3.10/site-packages/playwright/_impl/_assertions.py", line 481, in to_have_text
+    await self._expect_impl(
+  File "/opt/hostedtoolcache/Python/3.10.15/x64/lib/python3.10/site-packages/playwright/_impl/_assertions.py", line 74, in _expect_impl
+    raise AssertionError(
+AssertionError: Locator expected to have text 'View In Cart'
+Actual value: Add To Cart 
 Call log:
-navigating to "https://www.epicgames.com/account/creator-programs", waiting until "networkidle"
+LocatorAssertions.to_have_text with timeout 5000ms
+  - waiting for locator("//aside//button[@data-testid='add-to-cart-cta-button']")
+  -   locator resolved to <button disabled type="button" aria-label="Loading" data-testid="add-to-cart-cta-button" class="eds_14hl3lj9 eds_14hl3ljc eds_14hl3ljh eds_1ypbntdc eds_14hl3lja eds_14hl3lj2 eds_14hl3lj5">…</button>
+  -   unexpected value "Add To Cart"
+  -   locator resolved to <button disabled type="button" aria-label="Loading" data-testid="add-to-cart-cta-button" class="eds_14hl3lj9 eds_14hl3ljc eds_14hl3ljh eds_1ypbntdc eds_14hl3lja eds_14hl3lj2 eds_14hl3lj5">…</button>
+  -   unexpected value "Add To Cart"
+  -   locator resolved to <button type="button" aria-describedby="tippy-5" data-testid="add-to-cart-cta-button" class="eds_14hl3lj9 eds_14hl3ljc eds_14hl3ljh eds_1ypbntdc eds_14hl3lja eds_14hl3lj2">…</button>
+  -   unexpected value "Add To Cart"
+  -   locator resolved to <button type="button" aria-describedby="tippy-5" data-testid="add-to-cart-cta-button" class="eds_14hl3lj9 eds_14hl3ljc eds_14hl3ljh eds_1ypbntdc eds_14hl3lja eds_14hl3lj2">…</button>
+  -   unexpected value "Add To Cart"
+  -   locator resolved to <button type="button" aria-describedby="tippy-5" data-testid="add-to-cart-cta-button" class="eds_14hl3lj9 eds_14hl3ljc eds_14hl3ljh eds_1ypbntdc eds_14hl3lja eds_14hl3lj2">…</button>
+  -   unexpected value "Add To Cart"
+  -   locator resolved to <button type="button" aria-describedby="tippy-5" data-testid="add-to-cart-cta-button" class="eds_14hl3lj9 eds_14hl3ljc eds_14hl3ljh eds_1ypbntdc eds_14hl3lja eds_14hl3lj2">…</button>
+  -   unexpected value "Add To Cart"
+  -   locator resolved to <button type="button" aria-describedby="tippy-5" data-testid="add-to-cart-cta-button" class="eds_14hl3lj9 eds_14hl3ljc eds_14hl3ljh eds_1ypbntdc eds_14hl3lja eds_14hl3lj2">…</button>
+  -   unexpected value "Add To Cart"
+  -   locator resolved to <button type="button" aria-describedby="tippy-5" data-testid="add-to-cart-cta-button" class="eds_14hl3lj9 eds_14hl3ljc eds_14hl3ljh eds_1ypbntdc eds_14hl3lja eds_14hl3lj2">…</button>
+  -   unexpected value "Add To Cart"
+  -   locator resolved to <button type="button" aria-describedby="tippy-5" data-testid="add-to-cart-cta-button" class="eds_14hl3lj9 eds_14hl3ljc eds_14hl3ljh eds_1ypbntdc eds_14hl3lja eds_14hl3lj2">…</button>
+  -   unexpected value "Add To Cart"
 
