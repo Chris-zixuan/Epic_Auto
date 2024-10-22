@@ -1,9 +1,9 @@
-2024-10-15 22:38:51 | INFO    | __main__:stash:131 | run - {'image': '20231121', 'version': '0.10.1.post2', 'role': 'EpicPlayer', 'headless': True}
-2024-10-15 22:38:56 | WARNING    | epic_games.agent:get_order_history:467 | Failed to get order history, cookie may have expired - {}
-2024-10-15 22:38:56 | DEBUG    | __main__:create_tasks:66 | Put task - {'title': 'Outliver: Tribulation', 'url': 'https://store.epicgames.com/en-US/p/outliver-tribulations-679884'}
-2024-10-15 22:38:56 | DEBUG    | __main__:create_tasks:66 | Put task - {'title': 'Empyrion - Galactic Survival', 'url': 'https://store.epicgames.com/en-US/p/empyrion-galactic-survival-fbd99f'}
-2024-10-15 22:39:01 | INFO    | epic_games.agent:claim_weekly_games:294 | claim_weekly_games - {'action': 'go to store', 'url': 'https://store.epicgames.com/en-US/p/outliver-tribulations-679884'}
-2024-10-15 22:39:12 | ERROR    | __main__:run:158 | An error has been caught in function 'run', process 'MainProcess' (3623), thread 'MainThread' (139949778819968): - {}
+2024-10-22 22:38:29 | INFO    | __main__:stash:131 | run - {'image': '20231121', 'version': '0.10.1.post2', 'role': 'EpicPlayer', 'headless': True}
+2024-10-22 22:38:33 | WARNING    | epic_games.agent:get_order_history:467 | Failed to get order history, cookie may have expired - {}
+2024-10-22 22:38:34 | DEBUG    | __main__:create_tasks:66 | Put task - {'title': 'Kardboard Kings', 'url': 'https://store.epicgames.com/en-US/p/kardboard-kings-0962f8'}
+2024-10-22 22:38:34 | DEBUG    | __main__:create_tasks:66 | Put task - {'title': 'Invincible Presents: Atom Eve', 'url': 'https://store.epicgames.com/en-US/p/atom-eve-ff090d'}
+2024-10-22 22:38:38 | INFO    | epic_games.agent:claim_weekly_games:294 | claim_weekly_games - {'action': 'go to store', 'url': 'https://store.epicgames.com/en-US/p/kardboard-kings-0962f8'}
+2024-10-22 22:38:49 | ERROR    | __main__:run:158 | An error has been caught in function 'run', process 'MainProcess' (3645), thread 'MainThread' (139627494873984): - {}
 Traceback (most recent call last):
   File "/home/runner/work/Epic_Auto/Epic_Auto/epic/src/claim.py", line 162, in <module>
     asyncio.run(run())
@@ -41,7 +41,7 @@ Traceback (most recent call last):
     result = await fn(*args, **kwargs)
   File "/home/runner/work/Epic_Auto/Epic_Auto/epic/src/epic_games/agent.py", line 310, in claim_weekly_games
     await expect(cta_btn).to_have_text("View In Cart")
-  File "/opt/hostedtoolcache/Python/3.10.15/x64/lib/python3.10/site-packages/playwright/async_api/_generated.py", line 19164, in to_have_text
+  File "/opt/hostedtoolcache/Python/3.10.15/x64/lib/python3.10/site-packages/playwright/async_api/_generated.py", line 19470, in to_have_text
     await self._impl_obj.to_have_text(
   File "/opt/hostedtoolcache/Python/3.10.15/x64/lib/python3.10/site-packages/playwright/_impl/_assertions.py", line 481, in to_have_text
     await self._expect_impl(
